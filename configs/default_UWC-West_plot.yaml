@@ -1,0 +1,62 @@
+projection: CERRA #change some day to UWC-West projection
+sup_title:
+  title: "REPLACE BY ACTUAL TITLE"
+  y: 0.92
+  size: 30
+
+plot_info:
+  - sub_title:
+      title: "Overview: nodes only"
+      size: 20
+    extent: [4000000, -4000000, -3000000, 3000000]
+    zoom_box:
+      extent: [-500000, -3000000, -1500000, -2000000]
+      linewidth: 1
+      edgecolor: "r"
+      facecolor: "none"
+    CERRA:
+      c: "green"
+      marker: "."
+      linestyle: "None"
+      s: 0.1
+      alpha: 0.5
+    ERA5:
+      c: "blue"
+      marker: "."
+      linestyle: "None"
+      s: 5
+      alpha: 0.5
+    HIDDEN:
+      c: "black"
+      marker: "."
+      linestyle: "None"
+      s: 0.1
+      alpha: 0.5
+
+  - sub_title:
+      title: "Zoom: nodes & edges"
+      size: 20
+    extent: [-500000, -3000000, -1500000, -2000000]
+    zoom_box:
+      extent: [-500000, -3000000, -1500000, -2000000]
+      linewidth: 10
+      edgecolor: "r"
+      facecolor: "none"
+    CERRA:
+      c: "green"
+      marker: "o"
+      linestyle: "None"
+      s: 0.75
+    ERA5:
+      c: "blue"
+      marker: "o"
+      linestyle: "None"
+      s: 10
+    HIDDEN:
+      c: "black"
+      marker: "o"
+      linestyle: "None"
+      s: 0.75
+    EDGES:
+      c: "gray"
+      lw: 1
